@@ -1,0 +1,31 @@
+.HomeContainer {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(https://i.vimeocdn.com/video/783397002?mw=900&mh=506);
+    // background-image: url("https://i.vimeocdn.com/video/880283622?mw=1100&mh=619");
+    backdrop-filter: saturate(1.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .HomeWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        .HomeClickHeader {
+            text-align: center;
+            h1 {
+                animation: animate 3s linear ;
+                font-size: 1.6em;
+                margin-bottom: 4em;
+            }
+        }
+        p {
+            text-align: center;
+            width: 700px;
+            font-size: 1.5em;
+            animation: animateUp 3s;
+        }
+    }
+}
