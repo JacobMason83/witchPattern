@@ -1,7 +1,6 @@
 function Home() {
     return (
         <div className='HomeContainer'>
-        <video src="../styles/videos/smoke.mp4" type='video/mp4' ></video>
             <div className="HomeWrapper">
                 <div className="HomeClickHeader">
                 {/* need to add a click to the headline */}
