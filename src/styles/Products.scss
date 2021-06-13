@@ -1,18 +1,31 @@
-.ProductDisplay {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100vw;
-    max-height: 100vh;
-    width: 100%;
-    height: 100%;
+.ProductContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 25px;
     background-color: $purple-bg;
-    .ProductCard {
-      width: 500px;
-      height: 500px;
-        .ProductCardWrapper {
+    width: 100%;
+    .ProductDisplay {
+        display: flex;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100%;
+        margin-top: 3em;
+        
+        .first-row{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            grid-gap: 25px;
+           
+        }
+        .second-row{
+            display: flex;
+           
+        }
+        .third-row{
+            display: flex;
+            
         }
     }
 }
+
+

@@ -1,29 +1,42 @@
-// import { useState } from 'react'
-import { ProductData } from '../../data/productData'
+import { useEffect, useState } from 'react';
+import { CardGroup } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+// import {ProductData} from '../../data/productData';
 
-const  ProductDisplay = () => {
-    
-    return(
-        <div className="ProductDisplay">
-            {ProductData.map(item => {
-                return (
-                <div className="ProductCard">
-                    <div className="ProductCardWrapper">
-                        <img src={item.img} alt="productnotshowing" />
-                        <div className="ProductCardInfo">
-                            <p className="ProductDescription">
-                                {item.description}
-                            </p>
-                        </div>
-                        <h3 className="ProductPrice">
-                            {item.price}
-                        </h3>
-                    </div>
-                </div>
-                )
-            })}
-        </div>
-    )
-}
+const ProductDisplay = (props) => {
+    const [img, setImg] = useState('')
+    const [description, setDescription] = useState('')
+    const [price, setPrice] = useState('')
 
-export default ProductDisplay
+    useEffect(() => {
+        setDescription(props.description);
+        setImg(props.img)
+        setPrice(props.price)
+    },[])
+  return (
+      <div className="ProductDisplay">
+      <CardGroup >
+          <Card
+            style={{
+              width: '15rem',
+              marginRight: 'auto',
+              marginLeft: 'auto',
+              border: '5px solid black',
+              marginBottom: '2em',
+            }}
+          >
+            <Card.Img
+              variant="top"
+              src={img}
+            />
+            <Card.Body>
+              <Card.Title>Price: {price}</Card.Title>
+              <Card.Text> Description: {description}</Card.Text>
+            </Card.Body>
+          </Card>
+    </CardGroup>
+    </div>
+  );
+};
+
+export default ProductDisplay;

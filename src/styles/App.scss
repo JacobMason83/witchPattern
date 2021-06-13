@@ -7,8 +7,17 @@
 #root {
    min-width: 100vw;
   min-height: 100vh;
+  height: 100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(7, 6, 6, 0.9);
+  background-color: rgba(126,126,126, 0.8);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvYcArtd7w6iclY7Pm_YRFYtezJEA1bdKlqrmhHi8VljsgBrt0tMQZ8KmZbPsHYK0G9E&usqp=CAU');
   color: white;
+}
+html {
+  background-color: rgba(126,126,126, 0.8);
+  overflow: scroll;
 }
