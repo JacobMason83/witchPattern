@@ -1,0 +1,43 @@
+.FooterContainer {
+    display:flex;
+    width: 100vw;
+    height: 150px;
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    .FooterWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .FooterLeft {
+           width: 50vw;
+            .FooterLinkWrapper {
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                justify-content: space-around;
+                align-items: center;
+                list-style-type: none;
+                .FooterLinks {
+
+                    &:hover {
+                        text-transform: uppercase;
+                        border-bottom: .5em solid $purple-bg;
+                    }
+                }
+            }
+        }
+        .FooterBottom {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: auto;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            h3 {
+                font-size:1.3em;
+                font-weight: 900;
+            }
+        }
+    }
+}

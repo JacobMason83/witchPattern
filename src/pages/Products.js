@@ -16,12 +16,13 @@ const Products = () =>  {
        <ProductDisplay img={`../styles/images/${ProductData[4].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        <ProductDisplay img={`../styles/images/${ProductData[5].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        <ProductDisplay img={`../styles/images/${ProductData[6].img}`} description={ProductData[0].description} price={ProductData[0].price} />
+       <ProductDisplay img={`../styles/images/${ProductData[7].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        </div>
        <div className="third-row" data-aos="fade-up">
-       <ProductDisplay img={`../styles/images/${ProductData[7].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        <ProductDisplay img={`../styles/images/${ProductData[8].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        <ProductDisplay img={`../styles/images/${ProductData[9].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        <ProductDisplay img={`../styles/images/${ProductData[10].img}`} description={ProductData[0].description} price={ProductData[0].price} />
+       <ProductDisplay img={`../styles/images/${ProductData[11].img}`} description={ProductData[0].description} price={ProductData[0].price} />
        </div>
         </div>
     )
